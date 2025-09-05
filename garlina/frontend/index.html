@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garlina — Girls' Outfit Store</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">Garlina</div>
+    <div class="nav-links">
+      <a href="/" class="active">Shop</a>
+      <a href="/login.html">Admin Login</a>
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>New Arrivals for Girls</h1>
+    <p>Pretty. Comfy. Confident.</p>
+  </header>
+
+  <main>
+    <section class="filters">
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option>Dress</option>
+        <option>Top</option>
+        <option>Skirt</option>
+        <option>Lehenga</option>
+      </select>
+      <input id="searchInput" placeholder="Search products..." />
+    </section>
+
+    <section id="productGrid" class="grid"></section>
+
+    <section id="checkout" class="checkout hidden">
+      <h2>Checkout</h2>
+      <form id="checkoutForm">
+        <label>Name <input name="name" required /></label>
+        <label>Email <input type="email" name="email" /></label>
+        <label>Phone <input name="phone" required /></label>
+        <label>Address <textarea name="address" required></textarea></label>
+        <label>Note <textarea name="note" placeholder="Any special instruction?"></textarea></label>
+        <button type="submit">Place Order (COD)</button>
+        <button type="button" id="cancelCheckout">Cancel</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="cartDrawer" class="drawer hidden">
+    <div class="drawer-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart">×</button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="drawer-footer">
+      <div>Total: <span id="cartTotal">0</span> BDT</div>
+      <button id="goCheckout">Checkout</button>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

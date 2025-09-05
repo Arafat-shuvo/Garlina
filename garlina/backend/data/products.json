@@ -1,0 +1,39 @@
+[
+  {
+    "id": "p1-demo",
+    "name": "Garlina Pink Floral Dress",
+    "description": "Soft cotton floral dress for parties and daily wear.",
+    "price": 2499,
+    "category": "Dress",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Pink",
+      "White"
+    ],
+    "imageUrl": "",
+    "createdAt": "2025-09-01T00:00:00.000Z",
+    "updatedAt": "2025-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "p2-demo",
+    "name": "Garlina Denim Skirt",
+    "description": "Classic denim skirt with comfy elastic waist.",
+    "price": 1899,
+    "category": "Skirt",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "imageUrl": "",
+    "createdAt": "2025-09-01T00:00:00.000Z",
+    "updatedAt": "2025-09-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garlina — Admin</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">Garlina Admin</div>
+    <div class="nav-links">
+      <a href="/">Shop</a>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </nav>
+
+  <main style="padding:16px;max-width:1000px;margin:0 auto">
+    <section style="margin-bottom:20px">
+      <h2>Products</h2>
+      <form id="prodForm" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;border:1px solid #eee;padding:12px;border-radius:12px">
+        <input name="name" placeholder="Name" required />
+        <input name="price" placeholder="Price (BDT)" type="number" min="0" required />
+        <input name="category" placeholder="Category" />
+        <input name="sizes" placeholder="Sizes (comma)" />
+        <input name="colors" placeholder="Colors (comma)" />
+        <input name="image" type="file" accept="image/*" />
+        <textarea name="description" placeholder="Description" style="grid-column:1/-1"></textarea>
+        <button class="btn primary" type="submit" style="grid-column:1/-1">Create Product</button>
+      </form>
+      <div id="prodList" class="grid" style="margin-top:12px"></div>
+    </section>
+
+    <section>
+      <h2>Orders</h2>
+      <div id="orders"></div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
