@@ -70,4 +70,4 @@ garlina/
 - Put the app behind HTTPS (e.g., Nginx + Certbot).
 - If deploying publicly, use a robust DB instead of JSON files.
 
-Enjoy building **Garlina**! 💖
+
